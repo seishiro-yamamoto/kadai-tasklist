@@ -10,12 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_23_035057) do
+ActiveRecord::Schema.define(version: 2020_11_26_083151) do
 
-  create_table "tasks", force: :cascade do |t|
-    t.string "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+# Could not dump table "tasks" because of following StandardError
+#   Unknown type 'content' for column 'status'
 
 end
