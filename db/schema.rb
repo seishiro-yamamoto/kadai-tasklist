@@ -12,7 +12,11 @@
 
 ActiveRecord::Schema.define(version: 2020_11_26_083151) do
 
-# Could not dump table "tasks" because of following StandardError
-#   Unknown type 'content' for column 'status'
+  create_table "tasks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "status"
+  end
 
 end
